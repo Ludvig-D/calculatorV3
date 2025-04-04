@@ -58,12 +58,18 @@ buttons.forEach((button) => {
         }
       } else if (e.target.innerText === 'AC') {
         currNum.innerText = '0';
+        num1 = '';
+        opBool = false;
+        operator = '';
       }
     } else if (e.target.innerText === '.') {
+      if (!(currNum.innerText.indexOf('.') == 1)) {
+        currNum.innerText = currNum.innerText + e.target.innerText;
+      }
     } else {
       if (operator != '') {
         num1 = operate(num1, operator, currNum.innerText);
-        currNum.innerText = num1;
+        currNum.innerText = num1.toFixed(3);
         operator = '';
       }
       if (e.target.innerText === '+') {
@@ -87,7 +93,7 @@ buttons.forEach((button) => {
           console.error('Has to have a operator!!');
         } else {
           num1 = operate(num1, operator, currNum.innerText);
-          currNum.innerText = num1;
+          currNum.innerText = num1.toFixed(3);
           operator = '';
         }
       }
