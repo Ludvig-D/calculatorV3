@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #66999b;
+}
+
+h1 {
+  margin: 25px 0 40px 0;
+  font-size: 45px;
+}
+
+.calContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5em;
+}
+
+.numContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-color: #424874;
+  color: #dcd6f7;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  background-color: #424874;
+}
+
+.buttonContainer button {
+  width: 75px;
+  height: 75px;
+  flex: 1 1 1;
+  font-size: 0.8em;
+}
+
+.buttonContainer .twoSpan {
+  width: 150px;
+}
