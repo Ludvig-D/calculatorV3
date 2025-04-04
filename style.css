@@ -10,6 +10,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #66999b;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -30,8 +31,8 @@ h1 {
   background-color: #424874;
   color: #dcd6f7;
   max-width: 300px;
-  min-height: 91px;
   height: auto;
+  font-size: 75px;
 }
 
 .buttonContainer {
