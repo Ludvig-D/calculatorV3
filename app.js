@@ -69,7 +69,7 @@ buttons.forEach((button) => {
     } else {
       if (operator != '') {
         num1 = operate(num1, operator, currNum.innerText);
-        currNum.innerText = num1.toFixed(3);
+        currNum.innerText = Math.round(num1 * 100) / 100;
         operator = '';
       }
       if (e.target.innerText === '+') {
@@ -93,7 +93,7 @@ buttons.forEach((button) => {
           console.error('Has to have a operator!!');
         } else {
           num1 = operate(num1, operator, currNum.innerText);
-          currNum.innerText = num1.toFixed(3);
+          currNum.innerText = Math.round(num1 * 100) / 100;
           operator = '';
         }
       }
